@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerVault - Contacts</title>
+    <link href="assets/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="contacts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="contacts.js" defer></script>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="assets/img/logo.png" alt="SneakerVault" width="40"> SneakerVault
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sneakers.html">Sneakers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Contact Us</h2>
+
+        <div class="contact-form-container">
+            <form name="contactForm" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+
+        <div class="contact-details">
+            <h4>Other Ways to Contact SneakerVault</h4>
+            <p><i class="fas fa-phone"></i> Phone: 09054223567</p>
+            <p><i class="fas fa-envelope"></i> Email: jaspermiranda925@gmail.com</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; Jasper Meynard V. Miranda</p>
+    </footer>
+</body>
+</html>
